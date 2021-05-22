@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LandingScene.unity
     guid: 27ae62865138a4a26882cddbe3c20cf9
   - enabled: 1
+    path: Assets/NatSuite/Examples/Giffy/Giffy.unity
+    guid: f0e04975d4a0242a1a7ca599d9b0076f
+  - enabled: 0
     path: Assets/Scenes/CameraScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

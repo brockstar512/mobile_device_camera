@@ -375,6 +375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c6d75f4562e4f5aaac00e53e5418b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  findCamera: {fileID: 1112947565}
+  cameraImage: {fileID: 0}
   imageWidth: 640
   imageHeight: 480
   frameDuration: 0.1
@@ -405,6 +407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af9ebbf9348a34aa4b58ed427bc2a91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  background: {fileID: 2072624123}
+  fit: {fileID: 2072624126}
 --- !u!1 &1168017131
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +838,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2027404719}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1112947565}
+        m_MethodName: SwitchCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2027404719
 MonoBehaviour:
   m_ObjectHideFlags: 0

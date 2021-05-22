@@ -1,8 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - CloudBuildHelper
     Assembly-CSharp.dll:
+    - FindCamera
     - GoToCamera
-    - PhoneCamera
+    - NatSuite.Examples.Components.CameraPreview
+    - NatSuite.Examples.Components.RecordButton
+    - NatSuite.Examples.Giffy
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -11,8 +16,10 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.AspectRatioFitter
     - UnityEngine.UI.Button
@@ -22,7 +29,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/LandingScene.unity:
+    Assets/NatSuite/Examples/Giffy/Giffy.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -42,26 +49,36 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9674}
+      Script: {instanceID: 9694}
     - Class: 114
-      Script: {instanceID: 9822}
+      Script: {instanceID: 9852}
     - Class: 114
-      Script: {instanceID: 9862}
+      Script: {instanceID: 9894}
     - Class: 114
-      Script: {instanceID: 10232}
+      Script: {instanceID: 10066}
     - Class: 114
-      Script: {instanceID: 10414}
+      Script: {instanceID: 10274}
     - Class: 114
-      Script: {instanceID: 10572}
+      Script: {instanceID: 10644}
     - Class: 114
-      Script: {instanceID: 10592}
+      Script: {instanceID: 10666}
     - Class: 114
-      Script: {instanceID: 11012}
+      Script: {instanceID: 10818}
     - Class: 114
-      Script: {instanceID: 11164}
+      Script: {instanceID: 10968}
     - Class: 114
-      Script: {instanceID: 11354}
+      Script: {instanceID: 11104}
+    - Class: 114
+      Script: {instanceID: 11144}
+    - Class: 114
+      Script: {instanceID: 11432}
+    - Class: 114
+      Script: {instanceID: 11466}
+    - Class: 114
+      Script: {instanceID: 11472}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -75,7 +92,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/CameraScene.unity:
+    - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/LandingScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -90,37 +109,43 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9674}
+      Script: {instanceID: 9694}
     - Class: 114
-      Script: {instanceID: 10030}
+      Script: {instanceID: 9852}
     - Class: 114
-      Script: {instanceID: 10184}
+      Script: {instanceID: 9894}
     - Class: 114
-      Script: {instanceID: 10232}
+      Script: {instanceID: 10274}
     - Class: 114
-      Script: {instanceID: 10592}
+      Script: {instanceID: 10474}
     - Class: 114
-      Script: {instanceID: 11012}
+      Script: {instanceID: 10644}
     - Class: 114
-      Script: {instanceID: 11354}
+      Script: {instanceID: 10666}
+    - Class: 114
+      Script: {instanceID: 11104}
+    - Class: 114
+      Script: {instanceID: 11268}
+    - Class: 114
+      Script: {instanceID: 11466}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -147,6 +172,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 02b5a456ddd04442ae6271b1abad27e4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: NatSuite.Examples
+    className: MiniCam
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -269,6 +300,12 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 494e3b0897c1853549d512c9e22d8dee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: NatSuite.Examples
+    className: WebCam
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -285,6 +322,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PhoneCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 9da4876542b9902b4c7e097c744671d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: NatSuite.Examples.Components
+    className: MicrophoneButton
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -317,10 +360,22 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: NatSuite.Examples
+    className: HotMic
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: NatSuite.Examples
+    className: Karaoke
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -377,6 +432,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: c9634e0400f3a55e8f1aca689662360a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FindCamera
+  - hash:
+      serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -425,6 +486,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 8ed40d57bfc9684c64082622086977c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: NatSuite.Examples.Components
+    className: RecordButton
+  - hash:
+      serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -449,6 +516,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: NatSuite.Examples.Components
+    className: CameraPreview
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -459,6 +532,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-Editor.dll
+    namespaceName: 
+    className: CloudBuildHelper
   - hash:
       serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
@@ -477,6 +556,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayModeRunnerCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 94b246b0dd817b16f653e8bd9c47af81
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: NatSuite.Examples
+    className: ReplayCam
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -521,6 +606,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: 020ca5d4744cb7ed9dd50bf8abb144dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: NatSuite.Examples
+    className: Giffy
+  - hash:
+      serializedVersion: 2
       Hash: aa88ae22474df55295327e4ee99e5a24
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -551,6 +642,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 9
   scenePathNames:
-  - Assets/LandingScene.unity
-  - Assets/Scenes/CameraScene.unity
-  playerPath: /Users/marshallbrock/Desktop/iphoneTest/iphoneTest/iphoneTest
+  - Assets/Scenes/LandingScene.unity
+  - Assets/NatSuite/Examples/Giffy/Giffy.unity
+  playerPath: /Users/marshallbrock/Desktop/NatTest/iphoneTest

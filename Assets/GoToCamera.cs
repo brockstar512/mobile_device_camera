@@ -11,7 +11,9 @@ public class GoToCamera : MonoBehaviour
  
 public void loadlevel()
 {
-    SceneManager.LoadScene("CameraScene");
+        //SceneManager.LoadScene("CameraScene");
+        SceneManager.LoadScene("Giffy");
 
-}
+
+    }
 }

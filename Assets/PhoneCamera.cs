@@ -7,8 +7,6 @@ public class PhoneCamera : MonoBehaviour
 {
     private bool camAvailable;
     private WebCamTexture backCam;
-    private WebCamTexture frontCam;
-
     private Texture defaultBackground;
 
     public RawImage background;
@@ -31,10 +29,6 @@ public class PhoneCamera : MonoBehaviour
             if(!devices[i].isFrontFacing)
             {
                 backCam = new WebCamTexture(devices[i].name, Screen.width, Screen.height);
-            }
-            else if(devices[i].isFrontFacing)
-            {
-                frontCam = new WebCamTexture(devices[i].name, Screen.width, Screen.height);
             }
         }
         if(backCam == null)
@@ -61,20 +55,5 @@ public class PhoneCamera : MonoBehaviour
 
         int orient = -backCam.videoRotationAngle;
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
-    }
-
-    public void SwitchCamera()
-    {
-        //if(background.texture == backCam)
-        if (backCam.isPlaying)
-        {
-            backCam.Stop();
-            frontCam.Play();
-        }
-        else
-        {
-            frontCam.Stop();
-            backCam.Play();
-        }
     }
 }
