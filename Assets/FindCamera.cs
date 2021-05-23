@@ -32,23 +32,23 @@ public class FindCamera : MonoBehaviour
         {
             Debug.Log("Here are the devices "+ devices[i]);
             //memory crashes when trying to switch cameras
-            if (devices[i].isFrontFacing)
+            if (!devices[i].isFrontFacing)
             {
-                Debug.Log("is this front facing? " + devices[i].isFrontFacing);
-                frontCam = new WebCamTexture(devices[i].name, Screen.width, Screen.height);
-            }
-            else if (!devices[i].isFrontFacing)
-            {
+                Debug.Log("this back facing cam");
                 backCam = new WebCamTexture(devices[i].name, Screen.width, Screen.height);
             }
+            else if (devices[i].isFrontFacing)
+            {
+                frontCam = new WebCamTexture(devices[i].name, Screen.width, Screen.height);
+            }
         }
-        if (frontCam == null)
+        if (backCam == null)
         {
             Debug.Log("Not able to find frontCam camera");
             return;
         }
-        frontCam.Play();
-        background.texture = frontCam;
+        backCam.Play();
+        background.texture = backCam;
 
         camAvailable = true;
 
@@ -76,11 +76,13 @@ public class FindCamera : MonoBehaviour
         {
             backCam.Stop();
             frontCam.Play();
+            background.texture = frontCam;
         }
         else
         {
             frontCam.Stop();
             backCam.Play();
+            background.texture = backCam;
         }
     }
 }

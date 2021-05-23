@@ -737,6 +737,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA91E4897CA9F429677AFC57ED00D90DE8D3C7001
 IL2CPP_EXTERN_C String_t* _stringLiteralB4A4FA66791AFC45441C77028D93DAA97FFE3C53;
 IL2CPP_EXTERN_C String_t* _stringLiteralCFF7FB9ED2C69D2A440C7099BA84F80510C72C11;
 IL2CPP_EXTERN_C String_t* _stringLiteralDF0B283B9A95A51EBD524BA812C3B7175FC63796;
+IL2CPP_EXTERN_C String_t* _stringLiteralE5086F6F7353BA526C8C60669EB03FB13E1915AD;
 IL2CPP_EXTERN_C String_t* _stringLiteralE7064F0B80F61DBC65915311032D27BAA569AE2A;
 IL2CPP_EXTERN_C String_t* _stringLiteralF353C47C306B2317B863C94330DB813E20BF6EE4;
 IL2CPP_EXTERN_C String_t* _stringLiteralF3A822D4B6AC4CD9828859883D087FEE5C6CFF02;
@@ -9692,10 +9693,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FindCamera_Start_m5D251637CBFB021470A06C
 IL_0037:
 	{
 		V_1 = 0;
-		goto IL_00ba;
+		goto IL_00c7;
 	}
 
-IL_003b:
+IL_003e:
 	{
 		WebCamDeviceU5BU5D_t1E18FBC79F0E58E248F2496291CE994A5E4AC21A* L_4 = V_0;
 		int32_t L_5 = V_1;
@@ -9711,12 +9712,14 @@ IL_003b:
 		int32_t L_12 = V_1;
 		NullCheck(L_11);
 		bool L_13 = WebCamDevice_get_isFrontFacing_mD55FF74A2CE25897AD77EAB5935B6A76AD929D38((WebCamDevice_tA545BEDFAFD78866911F4837B8406845541B8F54 *)((L_11)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_12))), /*hidden argument*/NULL);
-		if (!L_13)
+		if (L_13)
 		{
-			goto IL_0087;
+			goto IL_0094;
 		}
 	}
 	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
+		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteralE5086F6F7353BA526C8C60669EB03FB13E1915AD, /*hidden argument*/NULL);
 		WebCamDeviceU5BU5D_t1E18FBC79F0E58E248F2496291CE994A5E4AC21A* L_14 = V_0;
 		int32_t L_15 = V_1;
 		NullCheck(L_14);
@@ -9725,19 +9728,19 @@ IL_003b:
 		int32_t L_18 = Screen_get_height_mF5B64EBC4CDE0EAAA5713C1452ED2CE475F25150(/*hidden argument*/NULL);
 		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_19 = (WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 *)il2cpp_codegen_object_new(WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73_il2cpp_TypeInfo_var);
 		WebCamTexture__ctor_mDE1953773AFEB3650581D5AE2C7B5537715DE68F(L_19, L_16, L_17, L_18, /*hidden argument*/NULL);
-		__this->set_frontCam_6(L_19);
-		goto IL_00b6;
+		__this->set_backCam_5(L_19);
+		goto IL_00c3;
 	}
 
-IL_0087:
+IL_0094:
 	{
 		WebCamDeviceU5BU5D_t1E18FBC79F0E58E248F2496291CE994A5E4AC21A* L_20 = V_0;
 		int32_t L_21 = V_1;
 		NullCheck(L_20);
 		bool L_22 = WebCamDevice_get_isFrontFacing_mD55FF74A2CE25897AD77EAB5935B6A76AD929D38((WebCamDevice_tA545BEDFAFD78866911F4837B8406845541B8F54 *)((L_20)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_21))), /*hidden argument*/NULL);
-		if (L_22)
+		if (!L_22)
 		{
-			goto IL_00b6;
+			goto IL_00c3;
 		}
 	}
 	{
@@ -9749,32 +9752,32 @@ IL_0087:
 		int32_t L_27 = Screen_get_height_mF5B64EBC4CDE0EAAA5713C1452ED2CE475F25150(/*hidden argument*/NULL);
 		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_28 = (WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 *)il2cpp_codegen_object_new(WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73_il2cpp_TypeInfo_var);
 		WebCamTexture__ctor_mDE1953773AFEB3650581D5AE2C7B5537715DE68F(L_28, L_25, L_26, L_27, /*hidden argument*/NULL);
-		__this->set_backCam_5(L_28);
+		__this->set_frontCam_6(L_28);
 	}
 
-IL_00b6:
+IL_00c3:
 	{
 		int32_t L_29 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_29, (int32_t)1));
 	}
 
-IL_00ba:
+IL_00c7:
 	{
 		int32_t L_30 = V_1;
 		WebCamDeviceU5BU5D_t1E18FBC79F0E58E248F2496291CE994A5E4AC21A* L_31 = V_0;
 		NullCheck(L_31);
 		if ((((int32_t)L_30) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray*)L_31)->max_length)))))))
 		{
-			goto IL_003b;
+			goto IL_003e;
 		}
 	}
 	{
-		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_32 = __this->get_frontCam_6();
+		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_32 = __this->get_backCam_5();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
 		bool L_33 = Object_op_Equality_mBC2401774F3BE33E8CF6F0A8148E66C95D6CFF1C(L_32, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
 		if (!L_33)
 		{
-			goto IL_00dc;
+			goto IL_00e9;
 		}
 	}
 	{
@@ -9783,13 +9786,13 @@ IL_00ba:
 		return;
 	}
 
-IL_00dc:
+IL_00e9:
 	{
-		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_34 = __this->get_frontCam_6();
+		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_34 = __this->get_backCam_5();
 		NullCheck(L_34);
 		WebCamTexture_Play_mCF10A9B5EE587A066396B6378A972B31C9134436(L_34, /*hidden argument*/NULL);
 		RawImage_t68991514DB8F48442D614E7904A298C936B3C7C8 * L_35 = __this->get_background_8();
-		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_36 = __this->get_frontCam_6();
+		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_36 = __this->get_backCam_5();
 		NullCheck(L_35);
 		RawImage_set_texture_m63BC52D3B64A3BFD0EC182034FDD51E9A46F99F9(L_35, L_36, /*hidden argument*/NULL);
 		__this->set_camAvailable_4((bool)1);
@@ -9813,7 +9816,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FindCamera_SwitchCamera_m0D9728537BA8686
 		bool L_1 = WebCamTexture_get_isPlaying_m0BF473554164B2C30475CCD8C6BC1B93E9B52E67(L_0, /*hidden argument*/NULL);
 		if (!L_1)
 		{
-			goto IL_002e;
+			goto IL_003f;
 		}
 	}
 	{
@@ -9823,17 +9826,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FindCamera_SwitchCamera_m0D9728537BA8686
 		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_3 = __this->get_frontCam_6();
 		NullCheck(L_3);
 		WebCamTexture_Play_mCF10A9B5EE587A066396B6378A972B31C9134436(L_3, /*hidden argument*/NULL);
+		RawImage_t68991514DB8F48442D614E7904A298C936B3C7C8 * L_4 = __this->get_background_8();
+		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_5 = __this->get_frontCam_6();
+		NullCheck(L_4);
+		RawImage_set_texture_m63BC52D3B64A3BFD0EC182034FDD51E9A46F99F9(L_4, L_5, /*hidden argument*/NULL);
 		return;
 	}
 
-IL_002e:
+IL_003f:
 	{
-		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_4 = __this->get_frontCam_6();
-		NullCheck(L_4);
-		WebCamTexture_Stop_m4E3BD56B6481E2A0D53707119CFCB6074941B447(L_4, /*hidden argument*/NULL);
-		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_5 = __this->get_backCam_5();
-		NullCheck(L_5);
-		WebCamTexture_Play_mCF10A9B5EE587A066396B6378A972B31C9134436(L_5, /*hidden argument*/NULL);
+		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_6 = __this->get_frontCam_6();
+		NullCheck(L_6);
+		WebCamTexture_Stop_m4E3BD56B6481E2A0D53707119CFCB6074941B447(L_6, /*hidden argument*/NULL);
+		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_7 = __this->get_backCam_5();
+		NullCheck(L_7);
+		WebCamTexture_Play_mCF10A9B5EE587A066396B6378A972B31C9134436(L_7, /*hidden argument*/NULL);
+		RawImage_t68991514DB8F48442D614E7904A298C936B3C7C8 * L_8 = __this->get_background_8();
+		WebCamTexture_tEC97A7A0A101B159FEC9A3E95B14E41DD84EFD73 * L_9 = __this->get_backCam_5();
+		NullCheck(L_8);
+		RawImage_set_texture_m63BC52D3B64A3BFD0EC182034FDD51E9A46F99F9(L_8, L_9, /*hidden argument*/NULL);
 		return;
 	}
 }
