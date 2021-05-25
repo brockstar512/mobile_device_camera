@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{0304B507-46E8-689D-5794-CB36316B1D88}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NatSuite/Examples/Giffy/Giffy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FindCamera.cs">
     <Files>
       <File FileName="Assets/GoToCamera.cs" Line="15" Column="38" />
       <File FileName="Assets/NatSuite/Examples/Giffy/Giffy.cs" Line="48" Column="39" />
-      <File FileName="Assets/FindCamera.cs" Line="37" Column="25" />
+      <File FileName="Assets/FindCamera.cs" Line="85" Column="42" />
       <File FileName="Assets/NatSuite/NatCorder/Runtime/MP4Recorder.cs" Line="37" Column="13" />
     </Files>
     <Pads>
