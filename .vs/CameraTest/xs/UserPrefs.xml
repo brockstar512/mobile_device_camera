@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{0304B507-46E8-689D-5794-CB36316B1D88}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FindCamera.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NatSuite/NatCorder/Runtime/MP4Recorder.cs">
     <Files>
       <File FileName="Assets/GoToCamera.cs" Line="15" Column="38" />
-      <File FileName="Assets/NatSuite/Examples/Giffy/Giffy.cs" Line="48" Column="39" />
+      <File FileName="Assets/NatSuite/Examples/Giffy/Giffy.cs" Line="45" Column="39" />
       <File FileName="Assets/FindCamera.cs" Line="85" Column="42" />
-      <File FileName="Assets/NatSuite/NatCorder/Runtime/MP4Recorder.cs" Line="37" Column="13" />
+      <File FileName="Assets/NatSuite/NatCorder/Runtime/MP4Recorder.cs" Line="28" Column="27" />
+      <File FileName="Assets/NatSuite/NatCorder/Runtime/GIFRecorder.cs" Line="23" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +17,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cbe623d2-c65f-48a7-aea5-33b09c0b585e" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="829d1f76-30fc-4e37-ae22-aa97fbc478e7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
