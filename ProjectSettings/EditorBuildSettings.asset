@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/CameraScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/NatSuite/Examples/WebCam/WebCam.unity
+    guid: 66396c4bbeac244118de8e95af4aff1d
   m_configObjects: {}

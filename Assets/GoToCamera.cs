@@ -13,6 +13,8 @@ public void loadlevel()
 {
         //SceneManager.LoadScene("CameraScene");
         SceneManager.LoadScene("Giffy");
+        //SceneManager.LoadScene("WebCam");
+
 
 
     }

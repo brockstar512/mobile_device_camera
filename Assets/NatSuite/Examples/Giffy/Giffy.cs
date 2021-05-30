@@ -16,8 +16,8 @@ namespace NatSuite.Examples {
         public RawImage cameraImage;
 
         [Header("GIF Settings")]
-        public int imageWidth = 640;
-        public int imageHeight = 480;
+        //public int imageWidth = 640;
+        //public int imageHeight = 480;
         public float frameDuration = 0.1f; // seconds
 
         private GIFRecorder recorder;
@@ -45,7 +45,7 @@ namespace NatSuite.Examples {
             recorder = new GIFRecorder(cameraImage.texture.width, cameraImage.texture.height, frameDuration);
             cameraInput = new CameraInput(recorder, Camera.main);
             // Get a real GIF look by skipping frames
-            cameraInput.frameSkip = 4;
+            //cameraInput.frameSkip = 4;
         }
 
         public async void StopRecording () {
