@@ -20,7 +20,7 @@ public class FindCamera : MonoBehaviour
     {
         Debug.Log("on start");
 
-        defaultBackground = background.texture;
+        //defaultBackground = background.texture;
         WebCamDevice[] devices = WebCamTexture.devices;
         if (devices.Length == 0)
         {
@@ -44,7 +44,7 @@ public class FindCamera : MonoBehaviour
         }
         if (backCam == null)
         {
-            Debug.Log("Not able to find frontCam camera");
+            Debug.Log("Not able to find backcam camera");
             return;
         }
         backCam.Play();
@@ -52,6 +52,17 @@ public class FindCamera : MonoBehaviour
 
         camAvailable = true;
 
+    }
+    public WebCamTexture GetCurrentCam()
+    {
+        /*
+        if (frontCam.isPlaying)
+        {
+            return frontCam;
+        }
+        return backCam;
+        */
+        return frontCam;
     }
 
     /*private void Update()
@@ -70,6 +81,9 @@ public class FindCamera : MonoBehaviour
     //apparently front facing cameras can only be used with an arkit
     public void SwitchCamera()
     {
+        WebCamTexture recorder = GetCurrentCam();
+        
+
         Debug.Log("You are trying to switch cameras");
         //if(background.texture == backCam)
         if (backCam.isPlaying)

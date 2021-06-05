@@ -1,16 +1,41 @@
 ﻿<Properties StartupConfiguration="{0304B507-46E8-689D-5794-CB36316B1D88}|">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NatSuite/Examples/WebCam/WebCam.cs">
+    <Files>
+      <File FileName="Assets/FindCamera.cs" Line="1" Column="1" />
+      <File FileName="Assets/NatSuite/Examples/Giffy/Giffy.cs" Line="95" Column="21" />
+      <File FileName="Assets/NatSuite/NatCorder/Runtime/Internal/NativeRecorder.cs" Line="72" Column="35" />
+      <File FileName="Assets/NatSuite/NatCorder/Runtime/IMediaRecorder.cs" Line="36" Column="21" />
+      <File FileName="Assets/NatSuite/NatCorder/Runtime/Internal/Bridge.cs" Line="85" Column="42" />
+      <File FileName="Assets/NatSuite/NatCorder/Runtime/MP4Recorder.cs" Line="44" Column="49" />
+      <File FileName="Assets/NatSuite/Examples/WebCam/WebCam.cs" Line="14" Column="18" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CameraTest" expanded="True" selected="True" />
+          <Node name="CameraTest" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="NatSuite" expanded="True">
+                <Node name="Examples" expanded="True">
+                  <Node name="Giffy" expanded="True" />
+                  <Node name="WebCam" expanded="True">
+                    <Node name="WebCam.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="NatCorder" expanded="True">
+                  <Node name="Runtime" expanded="True">
+                    <Node name="Internal" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="829d1f76-30fc-4e37-ae22-aa97fbc478e7" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4305d64f-6eda-4266-9831-ac9fe9430c46" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
