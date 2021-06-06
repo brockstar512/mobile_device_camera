@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/NatSuite/Examples/Giffy/Giffy.unity
+- path: Assets/NatSuite/Examples/ReplayCam/ReplayCam.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

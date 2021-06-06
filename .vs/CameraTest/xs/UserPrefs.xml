@@ -1,13 +1,10 @@
 ﻿<Properties StartupConfiguration="{0304B507-46E8-689D-5794-CB36316B1D88}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NatSuite/Examples/WebCam/WebCam.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NatSuite/Examples/Giffy/Giffy.cs">
     <Files>
-      <File FileName="Assets/FindCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets/NatSuite/Examples/Giffy/Giffy.cs" Line="95" Column="21" />
-      <File FileName="Assets/NatSuite/NatCorder/Runtime/Internal/NativeRecorder.cs" Line="72" Column="35" />
-      <File FileName="Assets/NatSuite/NatCorder/Runtime/IMediaRecorder.cs" Line="36" Column="21" />
-      <File FileName="Assets/NatSuite/NatCorder/Runtime/Internal/Bridge.cs" Line="85" Column="42" />
-      <File FileName="Assets/NatSuite/NatCorder/Runtime/MP4Recorder.cs" Line="44" Column="49" />
-      <File FileName="Assets/NatSuite/Examples/WebCam/WebCam.cs" Line="14" Column="18" />
+      <File FileName="Assets/FindCamera.cs" Line="24" Column="41" />
+      <File FileName="Assets/NatSuite/Examples/WebCam/WebCam.cs" Line="21" Column="37" />
+      <File FileName="Assets/NatSuite/Examples/Giffy/Giffy.cs" Line="72" Column="10" />
+      <File FileName="Assets/NatSuite/Examples/ReplayCam/ReplayCam.cs" Line="52" Column="66" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,14 +13,26 @@
             <Node name="Assets" expanded="True">
               <Node name="NatSuite" expanded="True">
                 <Node name="Examples" expanded="True">
-                  <Node name="Giffy" expanded="True" />
-                  <Node name="WebCam" expanded="True">
-                    <Node name="WebCam.cs" selected="True" />
+                  <Node name="Giffy" expanded="True">
+                    <Node name="Giffy.cs" selected="True" />
                   </Node>
+                  <Node name="HotMic" expanded="True" />
+                  <Node name="Karaoke" expanded="True" />
+                  <Node name="MiniCam" expanded="True" />
+                  <Node name="ReplayCam" expanded="True" />
+                  <Node name="WebCam" expanded="True" />
                 </Node>
                 <Node name="NatCorder" expanded="True">
                   <Node name="Runtime" expanded="True">
+                    <Node name="Inputs" expanded="True" />
                     <Node name="Internal" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Plugins" expanded="True">
+                  <Node name="Managed" expanded="True">
+                    <Node name="Devices" expanded="True">
+                      <Node name="Internal" expanded="True" />
+                    </Node>
                   </Node>
                 </Node>
               </Node>
